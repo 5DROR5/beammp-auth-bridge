@@ -1,0 +1,39 @@
+<div id="pit-auth-container" class="pit-auth-root">
+  <link rel="stylesheet" href="/ui/modules/apps/pit-auth/app.css"/>
+
+  <div class="pit-overlay" ng-if="showAuth">
+    <div class="pit-box">
+
+      <div class="pit-header">
+        <h2>{{ t(tab === 'register' ? 'auth_register_title' : 'auth_login_title') }}</h2>
+      </div>
+
+      <div class="pit-tabs">
+        <button class="pit-tab" ng-class="{active: tab==='login'}"    ng-click="setTab('login')">{{ t('auth_login') }}</button>
+        <button class="pit-tab" ng-class="{active: tab==='register'}" ng-click="setTab('register')">{{ t('auth_register') }}</button>
+      </div>
+
+      <div class="pit-body">
+        <div class="pit-field">
+          <label>{{ t('auth_username') }}</label>
+          <input type="text" ng-model="form.username" placeholder="{{ t('auth_username_placeholder') }}" maxlength="20"/>
+        </div>
+        <div class="pit-field">
+          <label>{{ t('auth_password') }}</label>
+          <input type="password" ng-model="form.password"
+                 placeholder="{{ hasSaved ? '••••••••' : t('auth_password_placeholder') }}"/>
+          <small ng-if="hasSaved" class="pit-hint">{{ t('auth_password_saved') }}</small>
+        </div>
+        <p class="pit-error"   ng-if="error">{{ error }}</p>
+        <p class="pit-loading" ng-if="loading">{{ t('auth_loading') }}</p>
+      </div>
+
+      <div class="pit-footer">
+        <button class="pit-btn" ng-click="submit()" ng-if="!loading">
+          {{ t(tab === 'register' ? 'auth_do_register' : 'auth_do_login') }}
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+{
+        "auth_login_title":          "Sign In",
+        "auth_register_title":       "Create Account",
+        "auth_login":                "Sign In",
+        "auth_register":             "Register",
+        "auth_username":             "Username",
+        "auth_password":             "Password",
+        "auth_username_placeholder": "3-20 chars, letters/numbers/_/-",
+        "auth_password_placeholder": "Your password",
+        "auth_password_saved":       "Leave empty to sign in with saved password",
+        "auth_do_login":             "Sign In",
+        "auth_do_register":          "Create Account",
+        "auth_loading":              "Please wait...",
+        "auth_empty_fields":         "Please fill in all fields.",
+        "auth_username_length":      "Username must be 3-20 characters.",
+        "auth_invalid":              "Invalid data.",
+        "auth_username_invalid":     "Username: letters, numbers, _ or - only.",
+        "auth_username_taken":       "Username already taken.",
+        "auth_not_found":            "Username not found.",
+        "auth_wrong_password":       "Incorrect password.",
+        "auth_failed":               "Authentication failed."
+      }

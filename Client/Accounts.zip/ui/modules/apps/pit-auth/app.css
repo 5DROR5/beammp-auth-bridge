@@ -1,0 +1,162 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+.pit-auth-root {
+  position: fixed;
+  top: 0; left: 0;
+  width: 0; height: 0;
+  overflow: visible;
+  font-family: 'Segoe UI', sans-serif;
+  pointer-events: none !important;
+}
+
+.pit-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  pointer-events: auto !important;
+}
+
+.pit-box {
+  background: linear-gradient(135deg, #1e2a38 0%, #161f2b 100%);
+  width: 380px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  overflow: hidden;
+  animation: fadeUp 0.3s ease;
+  pointer-events: auto;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.pit-header {
+  background: rgba(0,0,0,0.25);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.pit-header h2 {
+  color: #3498db;
+  font-size: 1.4em;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.pit-tabs {
+  display: flex;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.pit-tab {
+  flex: 1;
+  padding: 12px;
+  background: none;
+  border: none;
+  color: #7f8c8d;
+  font-size: 0.95em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  pointer-events: auto;
+}
+
+.pit-tab.active {
+  color: #3498db;
+  border-bottom: 2px solid #3498db;
+  background: rgba(52,152,219,0.06);
+}
+
+.pit-tab:hover:not(.active) {
+  color: #ecf0f1;
+  background: rgba(255,255,255,0.04);
+}
+
+.pit-body {
+  padding: 24px 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pit-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pit-field label {
+  color: #bdc3c7;
+  font-size: 0.88em;
+  font-weight: 600;
+}
+
+.pit-field input {
+  padding: 11px 14px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 7px;
+  color: #ecf0f1;
+  font-size: 0.95em;
+  outline: none;
+  transition: border-color 0.2s;
+  pointer-events: auto;
+}
+
+.pit-field input:focus {
+  border-color: #3498db;
+  background: rgba(255,255,255,0.07);
+}
+
+.pit-hint {
+  color: #7f8c8d;
+  font-size: 0.8em;
+  margin-top: 2px;
+}
+
+.pit-error {
+  color: #e74c3c;
+  font-size: 0.85em;
+  text-align: center;
+  padding: 8px;
+  background: rgba(231,76,60,0.1);
+  border-radius: 6px;
+  border: 1px solid rgba(231,76,60,0.25);
+}
+
+.pit-loading {
+  color: #7f8c8d;
+  font-size: 0.85em;
+  text-align: center;
+}
+
+.pit-footer {
+  padding: 24px;
+}
+
+.pit-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #2980b9, #3498db);
+  border: none;
+  border-radius: 7px;
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  pointer-events: auto;
+}
+
+.pit-btn:hover {
+  background: linear-gradient(135deg, #3498db, #5dade2);
+  transform: translateY(-1px);
+}

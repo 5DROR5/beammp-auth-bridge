@@ -1,0 +1,54 @@
+{
+  "apps": [
+    {
+      "appName": "multiplayerchat",
+      "placement": {
+        "bottom": "0px",
+        "height": "250px",
+        "left": "0px",
+        "position": "absolute",
+        "right": "",
+        "top": "",
+        "width": "550px"
+      }
+    },
+    {
+      "appName": "multiplayerplayerlist",
+      "placement": {
+        "bottom": "",
+        "height": "530px",
+        "left": "",
+        "position": "absolute",
+        "right": "0px",
+        "top": "0px",
+        "width": "350px"
+      }
+    },
+    {
+      "appName": "multiplayersession",
+      "placement": {
+        "bottom": "",
+        "height": "40px",
+        "left": 0,
+        "margin": "auto",
+        "position": "absolute",
+        "right": 0,
+        "top": "0px",
+        "width": "700px"
+      }
+    },
+    {
+        "appName": "pitAuth",
+        "placement": {
+        "bottom": 0,
+        "height": "0px",
+        "left": 0,
+        "position": "absolute",
+        "top": 0,
+        "width": "0px"
+      }
+    }
+  ],
+  "title": "Accounts",
+  "type": "Accounts"
+}
