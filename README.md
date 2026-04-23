@@ -39,30 +39,6 @@ Copy `Client/Accounts.zip` into your server's `Resources/Client/` .
 
 ---
 
-## File Structure
-
-```
-Resources/
-├── Client/
-│   └── Accounts.zip/
-│       ├── lua/ge/extensions/pitAuth.lua
-│       ├── settings/ui_apps/layouts/default/Accounts.uilayout.json
-│       └── ui/modules/apps/pit-auth/
-│           ├── app.html
-│           ├── app.css
-│           ├── app.js
-│           └── app.json
-└── Server/
-    └── PIT_Auth/
-        ├── main.lua
-        ├── data/              //Automatically created
-        │   └── accounts.json
-        └── lang/
-            └── en.json
-```
-
----
-
 ## License
 
 MIT
