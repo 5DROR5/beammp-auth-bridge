@@ -4,6 +4,8 @@ Standalone player account system for BeamMP servers, bridging the gap while offi
 
 Guest players are prompted to register or sign in with a username and password. Authenticated players receive a persistent display name across sessions.
 
+![](https://raw.githubusercontent.com/5DROR5/beammp-auth-bridge/main/png.png)
+
 ---
 
 ## Features
