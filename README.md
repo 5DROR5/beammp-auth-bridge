@@ -13,7 +13,7 @@ Guest players are prompted to register or sign in with a username and password. 
 - Register and sign in with username and password
 - Persistent display name across sessions via hashed credentials stored locally
 - Auto-login on reconnect
-- Display names reflected on vehicles and player list in real time
+- Display names reflected on vehicles, player list, and launcher server list in real time
 - Server-side account storage in JSON
 - Autosave every 30 seconds
 - Translations support via `lang/en.json`
@@ -24,11 +24,32 @@ Guest players are prompted to register or sign in with a username and password. 
 
 **Server**
 
-Copy the `Server/PIT_Auth` folder into your server's `Resources/Server/` .
+Copy the `Server/PIT_Auth` folder into your server's `Resources/Server/`.
+
+```
+PIT_Auth/
+├── main.lua
+├── modules/
+│   └── DescUpdater.lua
+├── data/          ← created automatically
+└── lang/
+    └── en.json
+```
 
 **Client**
 
-Copy `Client/Accounts.zip` into your server's `Resources/Client/` .
+Copy `Client/Accounts.zip` into your server's `Resources/Client/`.
+
+---
+
+## Server Description
+
+The launcher server list displays authenticated player names automatically.  
+To add a fixed header above the player list (server name, rules, Discord link, etc.), edit `FIXED_DESC` at the top of `modules/DescUpdater.lua`:
+
+```lua
+local FIXED_DESC = "My Server — discord.gg/example\n\n"
+```
 
 ---
 
